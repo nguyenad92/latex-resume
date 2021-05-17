@@ -1,0 +1,310 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+\usepackage[document]{ragged2e}
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.01\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.01\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Dung (Daniel) Nguyen}\\ \medskip % Your name
+	\raggedright Passionate about building website, automation, and networking applications. 
+	Strong mindset for innovation and eager to explore new technologies in a dynamic environment.
+}
+\medskip
+\medskip
+\medskip
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Project}
+\begin{supertabular}{p{.65\linewidth}p{0.3\linewidth}}
+			
+	% Start a table with two columns, the table will ensure everything is aligned
+   \Large\textbf{Portfolio} \raggedright & \textit{10/2020 - Present} \\ 
+\end{supertabular}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Built a full-stack website \href{https://www.nguyen-ad.com}{nguyen-ad.com} using Django
+	framework, Python back-end and bootstrap front-end.
+    \item Deployed website on AWS EC2 and EBS, configuring domain name by Route53 for 99.99\% up time.
+    \item Hosted by Apache2 Web Services on EC2 ultilizing HTTPS with certbot.
+    % \item Converting old website into microservices with Django, Flask back-end, React front-end, with docker, docker-compose for better deployment.
+\end{itemize}
+
+\begin{supertabular}{p{.65\linewidth}p{0.3\linewidth}}
+	% Start a table with two columns, the table will ensure everything is aligned
+   \Large\textbf{Piman} \raggedright & \textit{9/2020 - 12/2020} \\ 
+\end{supertabular}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Contributed to \href{https://www.github.com/SJSU-CS-systems-group/piman}{github.com/SJSU-CS-systems-group/piman}
+	which manages Raspberry Pi networks.
+    \item Implemented DNS resolver to responde for the piman name query with the Pis' IPs.
+    \item Fixed and tested the TFTP OACK for Pi 4, allowed transfer files bigger 512b.
+    \item Created Linux bash shell script to distribute monitoring files services to Pis.
+    \item Monitored Pi metrics such as CPU, RAM, PID, temperature using Grafana.
+\end{itemize}
+
+\begin{supertabular}{p{.65\linewidth}p{0.3\linewidth}}
+	% Start a table with two columns, the table will ensure everything is aligned
+   \Large\textbf{Automation} \raggedright & \textit{10/2020 - 12/2020} \\ 
+\end{supertabular}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Applied Python win32com module for automating process open PSD file and change its content in Windows.
+    % \item Used Python Selenium for setting up Youtube livestream automatically, reduced time spend from half hour to 5 minutes.
+\end{itemize}
+
+% \medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+\begin{supertabular}{p{.65\linewidth}p{0.3\linewidth}}
+	% Start a table with two columns, the table will ensure everything is aligned
+   \Large\textbf{The Window Specialist} \raggedright & \textit{6/2020 - 8/2020} \\ 
+   \textit{Software Engineer Intern} \\
+\end{supertabular}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Reduced quoting process time from 1 week to 5 minutes by implementing PyPDF2 and Tesseract to auto extract text, 
+	and eliminate human errors.
+	\item Increased the object detection accuracy from 60\% to 80\% by using Nanonets API for model training.
+	\item Built the system as a website on Django and deployed on AWS for global access in testing phase.
+\end{itemize}
+
+\begin{supertabular}{p{.65\linewidth}p{0.3\linewidth}}
+	% Start a table with two columns, the table will ensure everything is aligned
+   \Large\textbf{NTL Systems} \raggedright & \textit{1/2019 - 8/2020} \\ 
+   \textit{Technician} \\
+\end{supertabular}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Ran and crimped RJ45 to connect devices for company saving \$26k+.
+    \item Developed adjustable constant load 120A current ability for power supply.
+    \item Used multimeter to measure circuit and soldering to repair circuit boards.
+\end{itemize}
+%------------------------------------------------
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.05\textheight][c]{0.88\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\begin{flushright}
+		\
+		\begin{supertabular}{p{\linewidth}p{0.1\linewidth}}
+			
+			 % Start a table with two columns, the table will ensure everything is aligned
+			San Jose, CA \raggedleft & \raisebox{-1pt}{\faHome} \\ % Address
+			+1 (408) 816-9773 \raggedleft & \raisebox{-1pt}{\faPhone} \\ % Phone number
+			\href{mailto:nguyenad92@gmail.com}{nguyenad92@gmail.com} \raggedleft & \raisebox{0pt}{\small\faEnvelope} \\ % Email address
+			% \href{mailto:dung.nguyen01@sjsu.edu}{dung.nguyen01@sjsu.edu} \raggedleft & \raisebox{0pt}{\small\faEnvelope} \\ % Email address
+			\href{https://www.nguyen-ad.com}{nguyen-ad.com} \raggedleft & \raisebox{-1pt}{\small\faDesktop}\\ % Website
+			\href{https://github.com/nguyenad92}{github.com/nguyenad92} \raggedleft & \raisebox{-1pt}{\faGithub} \\ % GitHub profile
+			\href{https://www.linkedin.com/in/nguyenad}{linkedin.com/in/nguyenad} \raggedleft & \raisebox{-1pt}{\faLinkedinSquare} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	\end{flushright}
+	
+}
+\medskip
+\medskip
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+\begin{supertabular}{p{.78\linewidth}p{0.3\linewidth}}
+	% Start a table with two columns, the table will ensure everything is aligned
+   \Large\textbf{BS in Software Engineering} \raggedright & \textit{GPA: 3.5} \\ 
+\end{supertabular}
+\begin{supertabular}{p{.65\linewidth}p{0.3\linewidth}}
+	% Start a table with two columns, the table will ensure everything is aligned
+   \textbf{San Jose State University} \raggedright & \textit{8/2018 - 12/2020} \\
+   \textit{Senior Project} \\
+\end{supertabular}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Created a webapp to find a specific page in pdf file and extract data using PyPDF2.
+    \item Implemented authentication for security access with privacy.
+    \item Made UI with HTML/CSS and bootstrap template.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+\section{Certificate} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+\begin{supertabular}{p{.78\linewidth}p{0.3\linewidth}}
+	% Start a table with two columns, the table will ensure everything is aligned
+   \Large\textbf{Cybersecurity} \raggedright & \textit{} \\ 
+\end{supertabular}
+\begin{supertabular}{p{.65\linewidth}p{0.3\linewidth}}
+	% Start a table with two columns, the table will ensure everything is aligned
+   \textbf{San Jose State University} \raggedright & \textit{8/2018 - 12/2020} \\
+
+%    \Large\textbf{AWS Certified Solutions Architect - Associate} \raggedright & \textit{} \\ 
+% \end{supertabular}
+% \begin{supertabular}{p{.65\linewidth}p{0.3\linewidth}}
+% 	% Start a table with two columns, the table will ensure everything is aligned
+%    \textbf{AWS} \raggedright & \textit{5/2021 - 5/2024} \\
+   \textit{Learning Outcomes} \\
+\end{supertabular}
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    % \item Applied security principles and practices to the environmental, software, and human components of a system.
+    \item Analyzed and evaluated systems with respect to maintaining operations in the presence of risks and threats.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Proficient}{Python, Java, Django, Ruby, AWS, }{}
+	\tableentry{}{bash, ssh, TCP/IP, DHCP, DNS,}{}
+	\tableentry{}{SQL, Docker, Raspberry Pi}{spaceafter}
+	%------------------------------------------------
+	
+	\tableentry{Prior experience}{C++, C, JavaScript, HTML, CSS,  }{}
+	\tableentry{}{React, LAMP, flask, Rails, }{}
+	\tableentry{}{Adobe XD, Photoshop}{spaceafter}
+	
+	
+\end{supertabular}
+
+
+\medskip % Extra whitespace before the next section
+
+\section{Volunteer} 
+%----------------------------------------------------------------------------------------
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item Develop website \href{http://live1.gracealliancechurch.org/}{live1.gracealliancechurch.org} and administrate youtube livestream at Grace Alliance Church.
+    \item Counted ballots and managed takedown for Santa Clara County in 2020 elections.
+    \item Helped and distributed care packages during Thanksgiving 2019 in downtown San Jose.
+\end{itemize}
+
+
+\section{Languages} 
+%----------------------------------------------------------------------------------------
+\begin{itemize}
+	\setlength\itemsep{-0.5em}
+    \item \textbf{English}: Fluent.
+    \item \textbf{Vietnamese}: Native.
+\end{itemize}
+
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
